@@ -16,7 +16,8 @@ const orderSummary = props => {
   <ul>
   {ingredientSummary}
   </ul>
-
+  <p> total amount : <strong> { props.total } </strong> </p>
+ 
   <h3>please confirm your order :)</h3>
 
   <Button btnType= "Success" clicked = { props.purchaseContinue}> Continue </Button>
