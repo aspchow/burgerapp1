@@ -11,10 +11,8 @@ class App extends Component {
     return (
       <div>
         <Layout>
-          <p>Testing!!</p>
-        </Layout>
-        <BurgerBuilder />
-        <BurgerIngredient type="meat"/>
+         <BurgerBuilder />
+        </Layout>      
       </div>
     );
   }

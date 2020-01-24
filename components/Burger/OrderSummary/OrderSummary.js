@@ -15,7 +15,7 @@ const orderSummary = props => {
   {ingredientSummary}
   </ul>
 
-  <h3>Thanks for Ordering!! :)</h3>
+  <h3>please confirm your order :)</h3>
   </Aux>
   );
 }

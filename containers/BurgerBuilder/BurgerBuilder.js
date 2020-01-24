@@ -32,6 +32,12 @@ class BurgerBuilder extends Component {
     console.log("can be purchased");
   }
 
+  purchaceCancleHandler = () => {
+    this.setState({
+      purchasing : false
+    })
+  }
+
   updatePurchasable(ingredients){
     const sum = Object.keys(ingredients).map( i => ingredients[i]).reduce( (sum , ele) => sum + ele , 0);
     this.setState({
@@ -78,7 +84,8 @@ class BurgerBuilder extends Component {
     }
     return (
       <Aux>
-       <Modal show={this.state.purchasing}>
+       <Modal show={this.state.purchasing} 
+       modelClosed = {this.purchaceCancleHandler}>
       <OrderSummary ingredients={this.state.ingredients}/>
        </Modal> 
       
